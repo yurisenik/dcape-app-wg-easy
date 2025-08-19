@@ -10,7 +10,7 @@ CFG_BAK            ?= $(CFG).bak
 APP_NAME           ?= wg-easy
 
 #- Docker image name
-IMAGE              ?= wg-easy/wg-easy
+IMAGE              ?= ghcr.io/wg-easy/wg-easy
 
 #- Docker image tag
 IMAGE_VER          ?= 13
@@ -25,7 +25,7 @@ APP_ROOT           ?= $(PWD)
 WG_HOST            ?= ${APP_SITE}
 
 #- Webapp password
-WEBAPP_PASSWORD           ?= VeryStrongPassword
+WEBAPP_PASSWORD           ?= $(shell openssl rand -hex 16; echo)
 
 #- Webapp port
 WEBAPP_PORT               ?= 51821
@@ -37,7 +37,7 @@ WG_PORT            ?= 51820
 WG_CONFIG_PORT     ?= 51820
 
 #- WG default address
-WG_DEFAULT_ADDRESS ?= 10.8.0.x
+WG_DEFAULT_ADDRESS ?= 10.100.10.x
 
 #- WG default DNS
 WG_DEFAULT_DNS     ?= 1.1.1.1

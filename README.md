@@ -1,4 +1,4 @@
-# dcape-app-template
+# dcape-app-wg-easy
 
 [![GitHub Release][1]][2] [![GitHub code size in bytes][3]]() [![GitHub license][4]][5]
 
@@ -8,12 +8,12 @@
 [4]: https://img.shields.io/github/license/dopos/dcape-app-template.svg
 [5]: LICENSE
 
-[upstream_name](https://upstream_url) application package for [dcape](https://github.com/dopos/dcape).
+[wg-easy](https://github.com/wg-easy/wg-easy) application package for [dcape](https://github.com/dopos/dcape).
 
 ## Upstream
 
-* Project: [upstream_name](https://upstream_url)
-* Docker: [template](https://hub.docker.com/r/template)
+* Project: [wg-easy](https://github.com/wg-easy/wg-easy)
+* Docker: [wg-easy](https://github.com/wg-easy/wg-easy/pkgs/container/wg-easy)
 
 ## Requirements
 
@@ -38,8 +38,8 @@
 
 Run commands on deploy host with [dcape](https://github.com/dopos/dcape) installed:
 ```bash
-git clone https://github.com/dopos/dcape-app-template.git
-cd dcape-app-template
+git clone https://github.com/yurisenik/dcape-app-wg-easy.git
+cd dcape-app-wg-easy
 make config-if
 ... <edit .env>
 make up
